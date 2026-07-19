@@ -1,0 +1,20 @@
+[package]
+name = "fingerprint-rs"
+version = "2026.7.0"
+edition = "2021"
+description = "Winnowing document fingerprinting and Jaccard similarity — detect duplicated logic/text"
+license = "MIT"
+repository = "https://github.com/grahambrooks/fingerprint-rs"
+keywords = ["winnowing", "fingerprint", "similarity", "jaccard", "duplication"]
+categories = ["command-line-utilities", "algorithms"]
+
+[[bin]]
+name = "fingerprint"
+path = "src/main.rs"
+
+[lib]
+name = "fingerprint_rs"
+path = "src/lib.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
