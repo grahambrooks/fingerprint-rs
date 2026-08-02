@@ -6,8 +6,8 @@ class Fingerprint < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/grahambrooks/fingerprint-rs/releases/download/v2026.7.0/fingerprint-v2026.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "cfaed5cef87bb64842d03178f7b96d1cbc18183081a9481e1fc5fdcf058a2bb2"
+      url "https://github.com/grahambrooks/fingerprint-rs/archive/refs/tags/v2026.8.1.tar.gz"
+      sha256 "df9bd3f4599198e42ea77b8484718a4e8d9c6838becd14a3460be894efa01afc"
     end
     on_intel do
       odie "Intel Mac binaries are not provided. Run `cargo install --git https://github.com/grahambrooks/fingerprint-rs --locked` to build from source."
