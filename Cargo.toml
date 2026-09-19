@@ -1,6 +1,6 @@
 [package]
 name = "fingerprint-rs"
-version = "2026.7.0"
+version = "2026.9.2"
 edition = "2021"
 description = "Winnowing document fingerprinting and Jaccard similarity — detect duplicated logic/text"
 license = "MIT"
