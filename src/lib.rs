@@ -144,9 +144,6 @@ mod tests {
     fn invalid_options_fall_back_to_defaults() {
         // t < k is invalid -> defaults (4,4); should behave like the default call.
         let s = "adorunrunrunadorunrun";
-        assert_eq!(
-            fingerprint(s, 9, 2),
-            fingerprint(s, DEFAULT_K, DEFAULT_T)
-        );
+        assert_eq!(fingerprint(s, 9, 2), fingerprint(s, DEFAULT_K, DEFAULT_T));
     }
 }

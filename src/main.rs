@@ -6,7 +6,7 @@ use std::path::{Path, PathBuf};
 use std::process::ExitCode;
 
 use clap::{Parser, Subcommand};
-use fingerprint_rs::{fingerprint, jaccard, similarity, DEFAULT_K, DEFAULT_T};
+use fingerprint_rs::{DEFAULT_K, DEFAULT_T, fingerprint, jaccard, similarity};
 
 #[derive(Parser)]
 #[command(
@@ -76,7 +76,9 @@ fn collect(paths: &[PathBuf]) -> Vec<PathBuf> {
 }
 
 fn walk(dir: &Path, out: &mut Vec<PathBuf>) {
-    let Ok(entries) = fs::read_dir(dir) else { return };
+    let Ok(entries) = fs::read_dir(dir) else {
+        return;
+    };
     for entry in entries.flatten() {
         let path = entry.path();
         if path.is_dir() {
