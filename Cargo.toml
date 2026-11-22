@@ -2,7 +2,7 @@
 name = "fingerprint-rs"
 version = "2026.11.3"
 edition = "2024"
-rust-version = "1.99.1"
+rust-version = "1.100.0"
 description = "Winnowing document fingerprinting and Jaccard similarity — detect duplicated logic/text"
 license = "MIT"
 repository = "https://github.com/grahambrooks/fingerprint-rs"
